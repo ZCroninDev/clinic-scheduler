@@ -50,9 +50,16 @@ The app runs at http://localhost:4200.
 
 Run the tests with `npm test`.
 
-### API and database
+### Database
 
-Setup steps for `server/` and `db/` will be added as they are built.
+1. Install PostgreSQL 16 or newer.
+2. Create the database: `CREATE DATABASE clinic_scheduler;`
+3. Copy `server/.env.example` to `server/.env` and set `DB_PASSWORD` to your local Postgres password. The `.env` file is ignored by git.
+4. Test the connection in your SQL client with `SELECT version();`.
+
+### API
+
+Setup steps for `server/` will be added as it is built.
 
 ## Decisions I made
 
